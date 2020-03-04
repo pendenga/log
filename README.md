@@ -19,7 +19,7 @@ This package is hosted on packagist and is installable via [Composer][link-compo
 Run the following: 
 
 ```bash
-$ composer require-dev pendenga/log
+$ composer require --dev pendenga/log
 ```
 
 Or add the following lines to your composer.json file...
