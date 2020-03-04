@@ -1,7 +1,8 @@
 {
   "name": "pendenga/log",
   "type": "library",
-  "description": "Some utility psr/loggers testing",
+  "description": "Utilities for using psr/loggers in dev",
+  "keywords": ["psr", "log", "logger", "debug", "dev", "devtools"],
   "license": "MIT",
   "authors": [
     {

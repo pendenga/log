@@ -1,6 +1,6 @@
-# Echo Logger
+# Pendenga's PSR Logger for Dev
 
-Use this logger in dev areas to just echo all the log output. I found myself writing this class over and over in 
+Use EchoLogger in dev areas to just echo all the log output. I found myself writing this class over and over in 
 my dev work, so I thought I'd just standardize it for inclusion as a package.
 
 NOTE: This is not recommended for production use.
@@ -49,7 +49,7 @@ This example tries out two different minimum log levels.
 ```php
 <?php
 
-use Pendenga\Log;
+use Pendenga\Log\EchoLogger;
 use Psr\Log\LoggerAwareTrait;
 use Psr\Log\LoggerInterface;
 use Psr\Log\LogLevel;
@@ -72,10 +72,10 @@ class Foo
     }
 }
 
-$foo = new Foo(new Log\EchoLogger());
+$foo = new Foo(new EchoLogger());
 $foo->bar();
 echo "---\n";
-$foo->setLogger(new Log\EchoLogger(LogLevel::ERROR));
+$foo->setLogger(new EchoLogger(LogLevel::ERROR));
 $foo->bar();
 ```
 

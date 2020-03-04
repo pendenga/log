@@ -1,6 +1,6 @@
 <?php
 
-use Pendenga\Log;
+use Pendenga\Log\EchoLogger;
 use Psr\Log\LoggerAwareTrait;
 use Psr\Log\LoggerInterface;
 use Psr\Log\LogLevel;
@@ -23,8 +23,8 @@ class Foo
     }
 }
 
-$foo = new Foo(new Log\EchoLogger());
+$foo = new Foo(new EchoLogger());
 $foo->bar();
 echo "---\n";
-$foo->setLogger(new Log\EchoLogger(LogLevel::ERROR));
+$foo->setLogger(new EchoLogger(LogLevel::ERROR));
 $foo->bar();
