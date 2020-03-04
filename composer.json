@@ -1,0 +1,22 @@
+{
+  "name": "pendenga/log",
+  "type": "library",
+  "description": "Some utility psr/loggers testing",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Grant Anderson",
+      "email": "pendenga@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.0",
+    "psr/log": "^1.1",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Pendenga\\Log\\": "src/"
+    }
+  }
+}
