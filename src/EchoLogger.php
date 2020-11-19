@@ -38,7 +38,6 @@ class EchoLogger extends AbstractLogger
         } else {
             $this->min_log_level = LogLevel::DEBUG;
         }
-        $this->log(LogLevel::DEBUG, 'Setting minimum log level: ' . LogLevel::DEBUG);
     }
 
     /**
